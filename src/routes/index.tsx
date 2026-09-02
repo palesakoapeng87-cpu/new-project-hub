@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
   component: Portfolio,
   head: () => ({
     meta: [
-      { title: "Palesa Koapeng | Public Management & Data Specialist" },
+      { title: "Palesa Rose Koapeng | Public Management & Data Specialist" },
       {
         name: "description",
         content:
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Palesa Koapeng | Public Management & Data Specialist",
+        content: "Palesa Rose Koapeng | Public Management & Data Specialist",
       },
       {
         property: "og:description",
@@ -134,7 +134,7 @@ function Portfolio() {
       <nav className="fixed top-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <span className="text-xl font-bold text-sky-400">PALESA KOAPENG</span>
+            <span className="text-xl font-bold text-sky-400">Palesa Rose Koapeng</span>
 
             {/* Desktop Nav */}
             <div className="hidden md:flex space-x-8 text-sm font-medium">
@@ -204,7 +204,7 @@ function Portfolio() {
               Public Management & Data Specialist
             </div>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
-              PALESA KOAPENG
+              Palesa Rose Koapeng
             </h1>
             <h2 className="text-2xl sm:text-3xl font-bold text-sky-400">
               Optimizing Public Sector Data & Administrative Operations
@@ -420,7 +420,7 @@ function Portfolio() {
       {/* Footer */}
       <footer className="py-8 border-t border-slate-800 bg-slate-900">
         <div className="max-w-6xl mx-auto px-4 text-center text-slate-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} PALESA KOAPENG. Built with React & Tailwind CSS.</p>
+          <p>&copy; {new Date().getFullYear()} Palesa Rose Koapeng. Built with React & Tailwind CSS.</p>
         </div>
       </footer>
     </div>
