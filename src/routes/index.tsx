@@ -223,7 +223,7 @@ function Portfolio() {
               </a>
               <a
                 href="/resume.pdf"
-                download
+                download="Palesa_Koapeng_CV.pdf"
                 className="px-6 py-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-medium rounded-lg transition-colors flex items-center gap-2"
               >
                 <FileDown size={18} />
