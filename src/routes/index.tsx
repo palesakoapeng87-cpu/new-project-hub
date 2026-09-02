@@ -20,20 +20,20 @@ export const Route = createFileRoute("/")({
   component: Portfolio,
   head: () => ({
     meta: [
-      { title: "Portfolio | Public Management & Data Specialist" },
+      { title: "Palesa Koapeng | Public Management & Data Specialist" },
       {
         name: "description",
         content:
-          "Public Management graduate with expertise in field data collection, institutional record management, and educational support systems.",
+          "Diploma in Public Management graduate with expertise in field data collection, institutional record management, and educational support systems.",
       },
       {
         property: "og:title",
-        content: "Portfolio | Public Management & Data Specialist",
+        content: "Palesa Koapeng | Public Management & Data Specialist",
       },
       {
         property: "og:description",
         content:
-          "Public Management graduate with expertise in field data collection, institutional record management, and educational support systems.",
+          "Diploma in Public Management graduate with expertise in field data collection, institutional record management, and educational support systems.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -120,14 +120,11 @@ function Portfolio() {
 
   const education = [
     {
-      degree: "Bachelor of Public Management",
+      degree: "Diploma in Public Management",
       institution: "University of South Africa",
       period: "Completed",
-    },
-    {
-      degree: "Certification in Electronic Data Capture",
-      institution: "Statistics South Africa Training Programme",
-      period: "Completed",
+      description:
+        "Focused on public sector governance, administrative processes, financial management, and public policy execution.",
     },
   ];
 
@@ -137,7 +134,7 @@ function Portfolio() {
       <nav className="fixed top-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <span className="text-xl font-bold text-sky-400">Portfolio</span>
+            <span className="text-xl font-bold text-sky-400">PALESA KOAPENG</span>
 
             {/* Desktop Nav */}
             <div className="hidden md:flex space-x-8 text-sm font-medium">
@@ -207,11 +204,15 @@ function Portfolio() {
               Public Management & Data Specialist
             </div>
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
-              Optimizing Public Sector Data & Administrative Operations
+              PALESA KOAPENG
             </h1>
+            <h2 className="text-2xl sm:text-3xl font-bold text-sky-400">
+              Optimizing Public Sector Data & Administrative Operations
+            </h2>
             <p className="text-lg text-slate-400 leading-relaxed">
-              Public Management graduate with expertise in field data collection, institutional record management, and
-              educational support systems. Dedicated to driving operational efficiency through modern data tools.
+              Diploma in Public Management graduate with expertise in field data collection, institutional record
+              management, and educational support systems. Dedicated to driving operational efficiency through modern
+              data tools.
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <a
@@ -240,11 +241,11 @@ function Portfolio() {
             <Award className="text-sky-400" /> About Me
           </h2>
           <p className="text-slate-300 leading-relaxed max-w-3xl">
-            I hold a background in <strong>Public Management</strong>, equipped with hands-on experience in public
-            administration, statistical field data collection, and academic assistance. Having worked with
-            organizations like <strong>Statistics South Africa</strong> and the{" "}
-            <strong>Department of Education</strong>, I bridge administrative execution with data capture standards to
-            support decision-making in public and social initiatives.
+            I hold a <strong>Diploma in Public Management</strong>, equipped with hands-on experience in public
+            administration, statistical field data collection, and academic assistance. Having worked with organizations
+            like <strong>Statistics South Africa</strong> and the <strong>Department of Education</strong>, I bridge
+            administrative execution with data capture standards to support decision-making in public and social
+            initiatives.
           </p>
         </div>
       </section>
@@ -355,12 +356,12 @@ function Portfolio() {
       <section id="education" className="py-16 bg-slate-800/50 border-t border-slate-800">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
-            <GraduationCap className="text-sky-400" /> Education & Certifications
+            <GraduationCap className="text-sky-400" /> Education & Qualifications
           </h2>
           <div className="space-y-6">
             {education.map((edu, index) => (
               <div key={index} className="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                   <div>
                     <h3 className="text-xl font-semibold text-white">{edu.degree}</h3>
                     <p className="text-sky-400">{edu.institution}</p>
@@ -369,6 +370,7 @@ function Portfolio() {
                     {edu.period}
                   </span>
                 </div>
+                <p className="text-slate-300 text-sm leading-relaxed">{edu.description}</p>
               </div>
             ))}
           </div>
@@ -378,26 +380,26 @@ function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-16 max-w-6xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
-          <Mail className="text-sky-400" /> Get In Touch
+          <Mail className="text-sky-400" /> Let's Connect
         </h2>
         <div className="bg-slate-800/40 p-8 rounded-xl border border-slate-800 max-w-2xl">
           <p className="text-slate-300 leading-relaxed mb-6">
-            I am open to opportunities in public administration, data collection, record management, and educational
-            support. Feel free to reach out via email or connect with me on professional networks.
+            I am actively seeking internship and full-time opportunities in Public Administration, Data Management, and
+            Administrative Support.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
               href="mailto:hello@example.com"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 border border-slate-700 hover:border-sky-400 rounded-lg text-slate-200 transition-colors"
             >
               <Mail size={18} />
-              Email
+              Email Me
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 border border-slate-700 hover:border-sky-400 rounded-lg text-slate-200 transition-colors"
             >
               <Linkedin size={18} />
               LinkedIn
@@ -406,7 +408,7 @@ function Portfolio() {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 rounded-lg transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 border border-slate-700 hover:border-sky-400 rounded-lg text-slate-200 transition-colors"
             >
               <Github size={18} />
               GitHub
@@ -418,7 +420,7 @@ function Portfolio() {
       {/* Footer */}
       <footer className="py-8 border-t border-slate-800 bg-slate-900">
         <div className="max-w-6xl mx-auto px-4 text-center text-slate-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Portfolio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} PALESA KOAPENG. Built with React & Tailwind CSS.</p>
         </div>
       </footer>
     </div>
